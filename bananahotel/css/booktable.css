@@ -1,0 +1,49 @@
+body{
+	margin:0;
+	padding:0;
+	font-family: 'Robota slab', serif;
+	box-sizing: border-box;
+
+	}
+	.your-form{
+width:100%;
+position: relative;
+top: 50%;
+left: 50%;
+color: black;
+
+
+}
+.clearfix{
+	clear: both;
+}
+.form{
+	background: url("../page/city.jpg") no-repeat;
+    background-size:  cover;	
+
+}
+button[type="submit"]{
+background: blue;
+color:white;
+padding: 0.5em;
+}
+button:hover{
+	color: #fff;
+	background-color: black;
+	border-radius: 50%;
+}
+input[type="text"]{
+	
+}
+textarea{
+width:45%;
+padding: 15px;
+margin-top: 10px;
+border:1px solid #7ac9b7;
+border-radius:5px;
+margin-bottom: 20px;
+resize:none;
+}
+label{
+	text-align: center;
+}

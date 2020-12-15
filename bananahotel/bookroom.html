@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/bookroom.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	
+	  <!-- Nav -->
+    <nav class="main-nav">      
+      <ul class="main-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="rooms.html">Our rooms</a></li>
+         <li class="dropdown"><a href="meals.html" class="dropbtn">View meals</a>
+           
+            <div class="dropdown-content">
+              <a href="meals-cat1.html">Hibachi entree</a>
+              <a href="meals-cat2.html">Dessert</a>
+              <a href="meals-cat3.html">Side Order</a>
+              <a href="meals-cat4.html">Nodes & Fried-Rice</a>
+              <a href="meals-cat5.html">Sea Food</a>
+            </div>  
+        </li> 
+        <li><a href="bookroom.html">Book a Room</a></li>      
+      </ul>     
+    </nav>
+    </div>
+     <!-- Nav-end -->
+      <!-- Showcase -->
+    <header class="showcase">
+      <div class="banner">
+        <div class="center-me">
+      <h1>BANANA HOTEL</h1>
+      <p>
+        <strong>Your Place To Be Away From Home</strong>  
+      </p>
+    </div>
+  </div>
+    </header>
+    <!--form-->
+     <div class="form">
+<div class="your-form">
+  <script type="text/javascript">
+
+  </script>
+<?php 
+if(isset($_post["create"])){
+echo"submission succcesfull";
+}
+?>
+
+<form  action="bananacontact.php" method="post" >
+<div>
+<p class="your-para">fname*</p>
+<input type="text" class="" name="fname" value="" placeholder="enter name">
+</div>
+<div class="clearfix"> </div>
+
+<div>
+<p class="your-para">Email*</p>
+<input type="email" class="" name="email" value="" placeholder="jondoe@yahoo.com">
+</div>
+<div class="clearfix"> </div>
+
+<div>
+<p class="your-para ">Phone number*</p>
+<input type="text" class="" name="phone" value="" placeholder="+2547XXXXXXXX">
+</div>
+<div>
+<p class="your-para ">Subject</p>
+<select class="subject" name="subject">
+<option value="1">Book a room</option>
+ <option value="2">Contact us</option>
+</select>
+</div>
+<div class="clearfix"> </div>
+
+
+<div>
+<p class="your-para ">Guest room</p>
+<select class="room" name="room">
+
+<option value="52">The twin</option>
+<option value="53">The double</option>
+<option value="54">The suite</option>
+<option value="55">The executive</option>
+</select>
+</div>
+<div>
+<p class="your-para ">Number of adults*</p>
+<input type="number" name="nbr_adults" class="" value="2" />
+</div>
+<div>
+<p class="your-para ">Number of children*</p>
+<input type="number" name="nbr_children" class="" value="0" />
+</div>
+<div>
+<p class="your-para ">Arrival date*</p>
+<input type="date" name="date_arrival" value="02-25-2020" />
+</div>
+
+<div>
+<p class="your-para ">Departure date*</p>
+<input type="date" name="date_departure"  value="02-26-2020" />
+</div>
+<div class="clearfix"> </div>
+
+<div>
+<p class="your-para ">Message*</p>
+<textarea name="message" rows="4" ></textarea>
+</div>
+
+<div>
+<button type="submit" onclick="window.alert('Information delivered')"> Send message</button>
+</div>
+
+</form>
+</div>
+</div>
+
+</body>
+</html>
